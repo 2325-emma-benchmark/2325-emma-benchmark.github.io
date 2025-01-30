@@ -32,7 +32,7 @@
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="icon" href="./static/images/vision.png">
+  <link rel="icon" href="./static/images/emma_web_logo.png">
 
   <link rel="stylesheet" href="./static/css/index_mmmu.css">
 
@@ -47,11 +47,11 @@
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       bulmaCarousel.attach('#pdf-carousel', {
-        slidesToScroll: 1,  // 每次滚动一个
-        slidesToShow: 1,    // 每次展示一个
-        loop: true,         // 启用循环滚动
-        autoplay: true,     // 自动滚动
-        autoplaySpeed: 5000 // 每 5 秒切换
+        slidesToScroll: 1, 
+        slidesToShow: 1,    
+        loop: true,         
+        autoplay: true,     
+        autoplaySpeed: 5000 
       });
     });
   </script>
@@ -66,8 +66,6 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-
-          <!-- 新增图片 -->
           <img src="./static/images/emma.png" alt="EMMA Logo" style="max-width: 200px; margin-bottom: 1rem;">
           <!-- <h1 class="title is-1 publication-title">An Enhanced MultiModal ReAsoning Benchmark</h1>-->
           <!-- <h2 class="subtitle is-3 publication-subtitle">An Enhanced MultiModal ReAsoning Benchmark</h2> -->
@@ -76,13 +74,12 @@
           <h2 class="subtitle is-3 publication-subtitle">Can MLLMs Reason in Multimodality?</h2>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <p>Anonymous Authors<sup>1</sup></p></span>
+              <p>Anonymous Authors</p></span>
           </div>
 
 
           <div class="column has-text-centered">
             <div class="publication-links">
-              <!-- PDF Link. -->
               <span class="link-block">
                 <a href="#"
                    class="external-link button is-normal is-rounded is-dark">
@@ -220,22 +217,6 @@
             As shown in  <a href="#EMMA_figure" style="text-decoration: underline; color: inherit;">Category Figure</a>, questions in EMMA <b>assess a wide array of multimodal reasoning skills</b>. For example, the pattern inference problem in math challenges models to identify and generalize visual patterns; the visual decomposition simulation problem in physics requires graphically decomposing forces to determine resultant effects; the reaction simulation problem in chemistry demands precise interpretation and simulation of electron movement; the 3D visualization problem in coding. 
             <!-- a compilation of data 1) carefully examined and filtered from 28 existing VQA and MathQA datasets and 2) manually collected by us. In total, 6,141 examples were collected from 31 different datasets. -->
           </p>
-
-          <div id="results-carousel" class="carousel results-carousel">
-            <div class="box m-5">
-              <div class="content has-text-centered">
-                <img src="static/images/our_new_3_datasets.png" alt="algebraic reasoning" width="80%"/>
-                <p> Examples of our newly annotated datasets: IQTest, FunctionQA, and PaperQA.</p>
-              </div>
-            </div>
-            <div class="box m-5">
-              <div class="content has-text-centered">
-                <img src="static/images/source_dataset.png" alt="arithmetic reasoning" width="50%"/>
-                <p> Summary of the 31 different source datasets in <img src="static/images/mathvista.png" style="width:1.0em;vertical-align: middle" alt="Logo"/>
-                  <span class="mathvista">MathVista</span>.
-              </div>
-            </div>
-          </div>
 
 
           <p>
@@ -633,60 +614,92 @@
   }
 </script>
 
-
-
+<!-- EMMA Case Examples Section -->
 <section class="section">
   <div class="container is-max-desktop">
-    <div class="columns is-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">EMMA Case Examples</h2>
+    <h2 class="title is-3 has-text-centered">Examples</h2>
 
-
-        <div id="pdf-carousel" class="carousel results-carousel">
-
-          <!-- 数学案例 -->
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="./static/images/math-case-1.png" alt="Math Case 1"
-                   style="max-width: 100%; height: auto; display: block; margin: 0 auto;"/>
-              <p>Math Case 1</p>
-            </div>
-          </div>
-
-          <!-- 物理案例 1 -->
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="./static/images/physics-case-1.png" alt="Physics Case 1"
-                   style="max-width: 100%; height: auto; display: block; margin: 0 auto;"/>
-              <p>Physics Case 1</p>
-            </div>
-          </div>
-
-          <!-- 物理案例 2 -->
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="./static/images/physics-case-2.png" alt="Physics Case 2"
-                   style="max-width: 100%; height: auto; display: block; margin: 0 auto;"/>
-              <p>Physics Case 2</p>
-            </div>
-          </div>
-
-          <!-- 化学案例 -->
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="./static/images/chemistry-case-1.png" alt="Chemistry Case 1"
-                   style="max-width: 100%; height: auto; display: block; margin: 0 auto;"/>
-              <p>Chemistry Case 1</p>
-            </div>
-          </div>
+    <div id="pdf-carousel" class="carousel results-carousel">
+      
+      <!-- Math Case -->
+      <div class="box case-box">
+        <div class="content has-text-centered">
+          <a href="./static/images/math-case-1.png" data-lightbox="emma-cases" data-title="Math Case 1">
+            <img src="./static/images/math-case-1.png" alt="Math Case 1" class="case-image"/>
+          </a>
+          <p>Math Case 1</p>
         </div>
-        <p class="has-text-centered">
-          More examples detailed in the paper.
-        </p>
       </div>
+      <!-- Math Case 2-->
+      <div class="box case-box">
+        <div class="content has-text-centered">
+          <a href="./static/images/math-case-2.png" data-lightbox="emma-cases" data-title="Math Case 2">
+            <img src="./static/images/math-case-2.png" alt="Math Case 2" class="case-image"/>
+          </a>
+          <p>Math Case 2</p>
+        </div>
+      </div>
+
+      <!-- Physics Case 1 -->
+      <div class="box case-box">
+        <div class="content has-text-centered">
+          <a href="./static/images/physics-case-1.png" data-lightbox="emma-cases" data-title="Physics Case 1">
+            <img src="./static/images/physics-case-1.png" alt="Physics Case 1" class="case-image"/>
+          </a>
+          <p>Physics Case 1</p>
+        </div>
+      </div>
+
+      <!-- Physics Case 2 -->
+      <div class="box case-box">
+        <div class="content has-text-centered">
+          <a href="./static/images/physics-case-2.png" data-lightbox="emma-cases" data-title="Physics Case 2">
+            <img src="./static/images/physics-case-2.png" alt="Physics Case 2" class="case-image"/>
+          </a>
+          <p>Physics Case 2</p>
+        </div>
+      </div>
+
+      <!-- Physics Case 3 -->
+      <div class="box case-box">
+        <div class="content has-text-centered">
+          <a href="./static/images/physics-case-3.png" data-lightbox="emma-cases" data-title="Physics Case 3">
+            <img src="./static/images/physics-case-3.png" alt="Physics Case 3" class="case-image"/>
+          </a>
+          <p>Physics Case 3</p>
+        </div>
+      </div>
+
+      <!-- Physics Case 4 -->
+      <div class="box case-box">
+        <div class="content has-text-centered">
+          <a href="./static/images/physics-case-4.png" data-lightbox="emma-cases" data-title="Physics Case 4">
+            <img src="./static/images/physics-case-4.png" alt="Physics Case 4" class="case-image"/>
+          </a>
+          <p>Physics Case 4</p>
+        </div>
+      </div>
+
+      <!-- Chemistry Case -->
+      <div class="box case-box">
+        <div class="content has-text-centered">
+          <a href="./static/images/chemistry-case-1.png" data-lightbox="emma-cases" data-title="Chemistry Case 1">
+            <img src="./static/images/chemistry-case-1.png" alt="Chemistry Case 1" class="case-image"/>
+          </a>
+          <p>Chemistry Case 1</p>
+        </div>
+      </div>
+      
     </div>
+
+    <p class="has-text-centered">More examples detailed in the Appendix.</p>
   </div>
 </section>
+
+<!-- Lightbox.js -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
 
 
 
